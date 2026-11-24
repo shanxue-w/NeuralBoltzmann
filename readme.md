@@ -23,8 +23,6 @@ The model pairs a 3D Fourier neural operator with a structured gain-loss paramet
 - **GPU & acceleration:** NVIDIA GPU (paper timings on A40), CuPy (for spectral evaluation), Triton (for fused inference kernels; required by the steady Couette solver)
 - **DSMC references:** Numba
 
-> **Note:** Only source code and Lebedev quadrature tables are tracked in Git; datasets, checkpoints, and outputs are excluded. Run all commands below from the repository root, and pass `--checkpoint` explicitly (many scripts default to a local `runs/.../best.pt` path). Every entry point exposes its options via `--help`.
-
 ---
 
 ## Repository structure
@@ -163,3 +161,21 @@ python UnsteadyBoltzmann/lid_cavacity_2d/run.py \
 ```
 
 **DSMC references:** Independent DSMC and ensemble scripts (`run_dsmc*.py`) are provided in `UnsteadyBoltzmann/sod_shock_1d/` and `UnsteadyBoltzmann/lid_cavacity_2d/`; use `--help` to configure particle counts, time steps, realizations, and outputs.
+
+---
+
+## Citation
+
+If you use this code in your research, please cite our [paper](https://arxiv.org/abs/2611.28864):
+
+```bibtex
+@misc{wang2026learningboltzmanncollisionoperator,
+  title={Learning the Boltzmann Collision Operator with Structural Constraints for Fast Kinetic Simulation},
+  author={Hao Wang and Zhenning Cai},
+  year={2026},
+  eprint={2611.28864},
+  archivePrefix={arXiv},
+  primaryClass={math.NA},
+  url={https://arxiv.org/abs/2611.28864},
+}
+```
