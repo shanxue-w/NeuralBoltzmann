@@ -166,7 +166,7 @@ python UnsteadyBoltzmann/lid_cavacity_2d/run.py \
 
 ## Citation
 
-If you use this code in your research, please cite our [paper](https://arxiv.org/abs/2611.28864):
+If you find this work useful, please cite our [paper](https://arxiv.org/abs/2611.28864):
 
 ```bibtex
 @misc{wang2026learningboltzmanncollisionoperator,
